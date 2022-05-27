@@ -96,11 +96,6 @@ def test_init_elastic_client():
 
 
 @pytest.mark.elasticsearch
-def test_init_opensearch_client():
-    OpenSearchDocumentStore(index="test_index", port=9201)
-
-
-@pytest.mark.elasticsearch
 def test_init_elastic_doc_store_with_index_recreation():
     index_name = "test_index_recreation"
     label_index_name = "test_index_recreation_labels"
