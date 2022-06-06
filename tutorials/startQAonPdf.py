@@ -34,7 +34,7 @@ def qa_pipeline_PineconeDocumentStore():
 
     # Let's first get some documents that we want to query
     # Here: RichDadPoorDad
-    doc_dir = "data/books"
+    doc_dir = "books/"
     # convert files to dicts containing documents that can be indexed to our datastore
     docs = convert_files_to_docs(
         dir_path=doc_dir, clean_func=clean_wiki_text, split_paragraphs=True)
